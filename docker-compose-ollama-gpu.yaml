@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   app:
     build: .
@@ -23,12 +21,11 @@ services:
     pull_policy: always
     tty: true
     restart: unless-stopped
-    image: ollama/ollama:latest
+    image: docker.io/ollama/ollama:latest
     ports:
       - 7869:11434
     environment:
       - OLLAMA_KEEP_ALIVE=24h
-      - OLLAMA_HOST=0.0.0.0
     networks:
       - ollama-docker
     deploy:
@@ -36,7 +33,7 @@ services:
         reservations:
           devices:
             - driver: nvidia
-              count: 1
+              count: all 
               capabilities: [gpu]
 
   ollama-webui:
