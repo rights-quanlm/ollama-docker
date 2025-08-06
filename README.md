@@ -84,6 +84,8 @@ docker compose down
 
 We welcome contributions! If you'd like to contribute to the Ollama Docker Compose Setup, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
+![Alt](https://repobeats.axiom.co/api/embed/d7581a324f7cb8cfcc18a1465b039157e3d1c8dc.svg "Repobeats analytics image")
+
 
 ## License
 
